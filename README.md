@@ -5,7 +5,7 @@ PicIO is an AI-powered tool that extracts images from given files and provides d
 ## Features
 
 - **Extracts images from PDF, Word, Excel, and PowerPoint files.**
-- **Generates descriptions for the extracted images using Groq's AI models.**
+- **Generates descriptions for the extracted images using Vision models from Groq AI Cloud.**
 - **Supports multiple file uploads of the same format.**
 - **Flexible to handle large files for image extraction.**
 - **Provides fallback model for generating descriptions when the primary model fails.**
@@ -47,9 +47,6 @@ These models are used to generate descriptions for the images extracted from you
 
 You can access the demo recording of the tool here: [Demo](https://drive.google.com/file/d/1AAqiyUrGuKrmzfQ_YDrppSM1NmhCA0id/view?usp=drive_link)
 
-Got it! Here's the content for the **Sample Files** section:
-
----
 
 ## Sample Files
 
@@ -60,14 +57,6 @@ The sample data/files that is demoed in the recording can be found in the `data`
 
 MIT License
 
-
-## Get Started
-
-Try out PicIO today and see how it can help you extract and describe images from your documents. Explore the demo, test with the sample files, and start using the tool!
-
-Sure! Here's the updated **Get Started** section with the additional point for running the application:
-
----
 
 ## Get Started
 
