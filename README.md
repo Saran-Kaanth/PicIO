@@ -64,3 +64,17 @@ MIT License
 ## Get Started
 
 Try out PicIO today and see how it can help you extract and describe images from your documents. Explore the demo, test with the sample files, and start using the tool!
+
+Sure! Here's the updated **Get Started** section with the additional point for running the application:
+
+---
+
+## Get Started
+
+Try out PicIO today and see how it can help you extract and describe images from your documents. Explore the demo, test with the sample files, and start using the tool!
+
+To run the application, simply execute:
+
+```bash
+streamlit run app.py
+```
