@@ -1,11 +1,11 @@
 # PicIO💫
 
-PicIO is an AI-powered tool that extracts images from given files and provides descriptions for each corresponding image. It supports four different file formats and can handle multiple file uploads within the same format. With the power of Groq's vision models, PicIO generates descriptive text for the images extracted from the documents.
+PicIO is an AI-powered tool that extracts images from given files and provides descriptions for each corresponding image. It supports four different file formats and can handle multiple file uploads within the same format. With the power of Ollama's vision models, PicIO generates descriptive text for the images extracted from the documents.
 
 ## Features
 
 - **Extracts images from PDF, Word, Excel, and PowerPoint files.**
-- **Generates descriptions for the extracted images using Vision models from Groq AI Cloud.**
+- **Generates descriptions for the extracted images using Gemma3 Model (Multimodal) from Ollama.**
 - **Supports multiple file uploads of the same format.**
 - **Flexible to handle large files for image extraction.**
 - **Provides fallback model for generating descriptions when the primary model fails.**
@@ -22,18 +22,21 @@ To install the required dependencies for PicIO, run:
 pip install -r requirements.txt
 ```
 
-### Environment Variables
+### MultiModel Used for Generating Descriptions
 
-Ensure the following environment variable is set up in your `.env` file:
+1. **gemma3:4b** (Default model)
 
-- **GROQ_API_KEY**: Your personal API key for GroqCloud Service. You can create this key [here](https://console.groq.com/keys).
+Above model is used to generate descriptions for the images extracted from your documents.
 
-### Vision Models Used for Generating Descriptions
+### Running Gemma3 Models Locally
 
-1. **llama-3.2-11b-vision-preview** (Default model)
-2. **llama-3.2-90b-vision-preview** (Fallback model)
+To use Gemma3 models locally, you need to install [**Ollama**](https://ollama.com/) on your system.
 
-These models are used to generate descriptions for the images extracted from your documents.
+After installing Ollama, open your command prompt and run the following command to pull the model:
+
+```bash
+ollama run gemma3:4b
+```
 
 ## Usage
 
