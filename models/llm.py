@@ -17,7 +17,9 @@ class LLM_:
             response: ChatResponse=chat(model='gemma3:4b',messages=[
                 {
                     "role": "user",
-                    "content": "Describe the given image with appropriate details.",
+                    "content": """
+                                Describe the given image within 250 words. It should be short and informative.
+                                """,
                     "images": [image_data],
                 },
             ])
